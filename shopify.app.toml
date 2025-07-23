@@ -1,0 +1,23 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "countdown-timer"
+client_id = "7df7514fcbe1d75d9d006d4164f50aae"
+application_url = "https://dosage-ridge-lang-macintosh.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = ["https://dosage-ridge-lang-macintosh.trycloudflare.com/auth/callback", "https://dosage-ridge-lang-macintosh.trycloudflare.com/auth/shopify/callback", "https://dosage-ridge-lang-macintosh.trycloudflare.com/api/auth/callback"]
+
+[webhooks]
+api_version = "2025-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "tester-ss.myshopify.com"
